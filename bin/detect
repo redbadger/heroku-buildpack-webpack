@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-PATTERN=(./config/*.webpack.config.*.js)
-
-if [ -f ${PATTERN[0]} ]; then
+if [ -f $1/config/server.webpack.config.babel.js ]; then
   echo "Webpack buildpack"
   exit 0
 else
